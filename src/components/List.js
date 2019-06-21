@@ -1,20 +1,7 @@
 import React from 'react'
-import ListItem from './listItem'
-
 import { connect } from 'react-redux'
 
-// function list(props) {
-//     console.log(props);
-
-//     let listItems = props.listItems.map(
-//         (item) => {
-//             return <ListItem
-//                 {...item}
-//                 key={item.ttl} >
-//             </ListItem>
-//         })
-//     return listItems;
-// }
+import ListItem from './listItem'
 
 class List extends React.Component {
 
@@ -43,7 +30,7 @@ class List extends React.Component {
 
 function mapSateToProps(store) {
     const { list } = store
-    return { carList: list.data }
+    return { carList: list }
 }
 
 export default connect(mapSateToProps)(List)

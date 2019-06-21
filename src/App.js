@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 
 import  List from "./components/List"
+import  Filters from "./components/Filters"
 
 function App() {
   let asa = [
@@ -11,6 +12,7 @@ function App() {
   ]
   return (
     <div className="App">
+      <Filters></Filters>
       <List listItems={asa}></List>
     </div>
   );
