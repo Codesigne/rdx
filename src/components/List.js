@@ -18,7 +18,7 @@ class List extends React.Component {
             (item) => {
                 return <ListItem
                     {...item}
-                    key={item.ttl} >
+                    key={item.name} >
                 </ListItem>
             })
         return (
